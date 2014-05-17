@@ -11,6 +11,7 @@
  * file per style scope.
  * 
  *= require_self
+ *= require jquery.ui.all
  *= require_tree .
  */
 
@@ -51,6 +52,29 @@
     padding: 1em 2em;
     width: 13em;
     background: #141;
+
+    form, div {
+      display: inline;
+    }
+
+    input { 
+      font-size: small;
+    }
+
+    #cart, a {
+      font-size: smaller;
+      color: white;
+
+      table{
+        border-top: 1px dotted #595;
+        border-bottom: 1px dotted #595;
+        margin-top: 10px;
+      }
+    }
+
+    .temp_information { 
+      color: white;
+    }
   
     ul {
       padding: 0;

@@ -1,0 +1,15 @@
+$('#cart').html("<%=j render @cart %>");
+	
+if ($('#cart tr').length == 1){
+	$('#cart').hide('blind', 1000);
+} 
+
+<%= puts @current_item.to_yaml %>
+
+<% if @current_item %>
+	$('#current_item').css({'background-color':'#88ff88'}).
+										animate({'background-color':'#114411'}, 1000);
+<% else %>
+	$('#cart > table').css({'background-color':'#88ff88'}).
+										animate({'background-color':'#114411'}, 1000);
+<% end %>
