@@ -64,7 +64,6 @@ class LineItemsController < ApplicationController
       @line_item.save!
     else
       @line_item.destroy
-      @current_item = nil
     end
     respond_to do |format|
       format.html { redirect_to store_url, notice: 'Line item successfully removed' }
